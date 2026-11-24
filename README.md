@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Personal Developer Portfolio
 
 A fast, modern, minimalist portfolio website tailored for **Students and Entry-Level Software Engineers**.
@@ -88,3 +89,6 @@ portfolio/
 ├── resume.pdf              # (Optional) Drop your resume PDF here
 └── README.md               # Documentation & setup guide
 ```
+=======
+# portfolio
+>>>>>>> 040395f4eb6e62041f067f86b04eb3f635a7a97d
