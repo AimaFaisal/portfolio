@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aima Faisal | Aspiring Software Engineer & Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aima Faisal - Software Engineering student at LCWU passionate about technology, AI, and innovative problem-solving." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text"><span id="navBrandName">Aima Faisal</span><span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-outline btn-sm hire-btn">Get In Touch</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="icon-btn mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container" id="heroMount">
+        <!-- Profile Picture Avatar -->
+        <div class="hero-avatar-wrapper">
+          <img src="profile.jpg" alt="Aima Faisal" class="hero-avatar" />
+        </div>
+
+        <!-- Availability Status Badge -->
+        <div class="hero-badge">
+          <span class="status-indicator"></span>
+          <span>Open to Internships & Part-Time Roles</span>
+        </div>
+
+        <!-- Hero Headline & Dynamic Typewriter -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-text">Aima Faisal</span> 👋<br />
+          <span class="typing-container">
+            <span id="typedText">Aspiring Software Engineer</span>
+            <span class="cursor">|</span>
+          </span>
+        </h1>
+
+        <!-- Bio / Tagline -->
+        <p class="hero-subtitle">
+          Software Engineering student passionate about technology, AI, and innovative problem-solving.
+          A curious learner driven by continuous growth, creativity, and building meaningful digital experiences.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i data-lucide="arrow-down" class="btn-icon"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i data-lucide="mail" class="btn-icon"></i>
+            <span>Get In Touch</span>
+          </a>
+          <a href="https://github.com/AimaFaisal" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <i data-lucide="github" class="btn-icon"></i>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+
+        <!-- Social Media / Contact Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/AimaFaisal" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+            <i data-lucide="github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aima-faisal-5a997336b" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:aimafaisalbutt@gmail.com" class="social-link" title="Email Me">
+            <i data-lucide="mail"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="stats-strip" id="stats">
+      <div class="container stats-grid" id="statsMount">
+        <div class="stat-card">
+          <div class="stat-number">3.55</div>
+          <div class="stat-label">Current CGPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5th</div>
+          <div class="stat-label">Semester (BS SE)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Projects & Studios</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2028</div>
+          <div class="stat-label">Graduation Year</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Impact</h2>
+          <p class="section-desc">A brief introduction to my background, current learning, and core engineering mindset.</p>
+        </div>
+
+        <div class="about-grid" id="aboutMount">
+          <div class="about-card main-about">
+            <h3>My Journey in Tech</h3>
+            <p>
+              I am an undergraduate Software Engineering student at <strong>Lahore College for Women University (LCWU)</strong>,
+              currently in my 5th semester maintaining a <strong>3.55 CGPA</strong>. My journey in technology is driven by an innate
+              curiosity for how software shapes our daily lives and an ambition to engineer creative, efficient, and user-centered solutions.
+            </p>
+            <p>
+              With a solid academic foundation in Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), and Database Systems,
+              I enjoy translating logical concepts into well-structured code. I am particularly excited about expanding my expertise in
+              modern web development and exploring the frontiers of <strong>Artificial Intelligence</strong>.
+            </p>
+            <div class="current-focus-box">
+              <span class="focus-title"><i data-lucide="sparkles"></i> Currently Exploring:</span>
+              <p>Python programming, Artificial Intelligence fundamentals, and Modern Web Development (HTML5, CSS3, JavaScript).</p>
+            </div>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="code"></i></div>
+              <h4>Object-Oriented Design</h4>
+              <p>Practicing clean architecture, modular code structures, and strong OOP standards in C++ and software projects.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="brain"></i></div>
+              <h4>Algorithms & Logic</h4>
+              <p>Solid foundation in Data Structures, algorithmic reasoning, discrete mathematics, and analytical problem-solving.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="layout"></i></div>
+              <h4>Web & UI/UX Design</h4>
+              <p>Crafting intuitive, accessible, and aesthetically pleasing digital experiences with clear visual hierarchy.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="sparkles"></i></div>
+              <h4>AI & Innovation</h4>
+              <p>Fascinated by emerging intelligent technologies, algorithmic learning models, and automated data solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Experience Timeline -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-desc">Academic foundation, relevant coursework, and university achievements.</p>
+        </div>
+
+        <div class="timeline" id="educationMount">
+          <!-- Degree Item -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Bachelor of Science in Software Engineering (BS SE)</h3>
+                  <span class="timeline-org">Lahore College for Women University (LCWU) • Lahore, Pakistan</span>
+                </div>
+                <span class="timeline-date">2024 — Present (Expected 2028) • 5th Semester</span>
+              </div>
+              <p class="timeline-body">
+                Pursuing rigorous training in software engineering methodologies, software construction, algorithmic problem-solving,
+                and modern system design with an active <strong>3.55 CGPA</strong>.
+              </p>
+              <div class="coursework-tags">
+                <span class="course-label">Relevant Coursework:</span>
+                <span class="tag">Object-Oriented Programming (OOP)</span>
+                <span class="tag">Data Structures & Algorithms (DSA)</span>
+                <span class="tag">Database Systems</span>
+                <span class="tag">Operating Systems</span>
+                <span class="tag">Computer Networks</span>
+                <span class="tag">Software Construction & Development</span>
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Web Technologies</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Linear Algebra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Excellence Milestone -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Academic Excellence & High Standing (3.55 CGPA)</h3>
+                  <span class="timeline-org">Department of Software Engineering, LCWU</span>
+                </div>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <p class="timeline-body">
+                Consistently demonstrated top academic discipline and high academic standing across foundational and advanced computing coursework.
+              </p>
+            </div>
+          </div>
+
+          <!-- Lab & Construction Milestone -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Construction & Practical Lab Projects</h3>
+                  <span class="timeline-org">LCWU Department of Computer Science & SE</span>
+                </div>
+                <span class="timeline-date">Ongoing</span>
+              </div>
+              <p class="timeline-body">
+                Hands-on development of console systems, relational database schemas, algorithm benchmarking, and frontend mockups through intensive university labs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Selected software engineering, algorithmic, and design projects highlighting hands-on problem solving.</p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="project-filters" id="projectFiltersMount">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="software">C++ & Software</button>
+          <button class="filter-btn" data-filter="design">Design & UI/UX</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGridMount">
+          <!-- Project 1: Hostel DSA -->
+          <article class="project-card" data-category="software">
+            <div class="project-card-header">
+              <div class="project-type-tag">C++ & Data Structures</div>
+              <div class="project-actions">
+                <a href="https://github.com/AimaFaisal" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub Repository">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Hostel Management System (DSA Edition)</h3>
+            <p class="project-desc">
+              Re-engineered the hostel management application using advanced data structures and algorithms to optimize student record handling, room allocation, and data retrieval efficiency at LCWU.
+            </p>
+            <div class="project-highlights">
+              <span><i data-lucide="check"></i> Optimized search, insertion, and retrieval operations with structured DSA techniques</span>
+              <span><i data-lucide="check"></i> Iterated and refactored core algorithms to improve computational speed and memory efficiency</span>
+              <span><i data-lucide="check"></i> Developed at Lahore College for Women University (LCWU)</span>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">Data Structures</span>
+              <span class="tech-badge">Algorithms</span>
+              <span class="tech-badge">Optimization</span>
+              <span class="tech-badge">File I/O</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Hostel Semester Project -->
+          <article class="project-card" data-category="software">
+            <div class="project-card-header">
+              <div class="project-type-tag">C++ Console System</div>
+              <div class="project-actions">
+                <a href="https://github.com/AimaFaisal" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub Repository">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Hostel Management System (Semester Project)</h3>
+            <p class="project-desc">
+              A complete console-based system designed for managing student records, automated room allocation, and reliable data persistence through structured file operations at LCWU.
+            </p>
+            <div class="project-highlights">
+              <span><i data-lucide="check"></i> Applied core programming constructs including functions, arrays, structs, and robust file I/O</span>
+              <span><i data-lucide="check"></i> Independently broke down real-world administrative workflows into modular, maintainable logic</span>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">Modular Programming</span>
+              <span class="tech-badge">File Handling</span>
+              <span class="tech-badge">Console UI</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Bake The Cookies -->
+          <article class="project-card" data-category="design">
+            <div class="project-card-header">
+              <div class="project-type-tag">UI/UX & Web Design</div>
+              <div class="project-actions">
+                <a href="https://bakethecookies.my.canva.site" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live Website">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Bake The Cookies — Website Design & Launch</h3>
+            <p class="project-desc">
+              Designed and published an inviting, visually appealing confectionery brand website at bakethecookies.my.canva.site, applying user-centric UI/UX design principles and responsive layouts.
+            </p>
+            <div class="project-highlights">
+              <span><i data-lucide="check"></i> Applied modern visual hierarchy, brand aesthetics, and typography to enhance user engagement</span>
+              <span><i data-lucide="check"></i> Gained practical experience in end-to-end web publishing through independent initiative</span>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-badge">UI/UX Design</span>
+              <span class="tech-badge">Web Design</span>
+              <span class="tech-badge">Canva</span>
+              <span class="tech-badge">Visual Hierarchy</span>
+              <span class="tech-badge">Responsive</span>
+            </div>
+          </article>
+
+          <!-- Project 4: The Visual Edit -->
+          <article class="project-card" data-category="design">
+            <div class="project-card-header">
+              <div class="project-type-tag">Branding & Digital Design</div>
+              <div class="project-actions">
+                <a href="https://instagram.com/thevisualedit.hq" target="_blank" rel="noopener noreferrer" class="icon-link" title="Digital Studio Page">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">The Visual Edit (@thevisualedit.hq) — Digital Studio</h3>
+            <p class="project-desc">
+              Founded and branded a custom digital design studio offering premium visual solutions under the tagline "Your story, visually edited to perfection". Created diverse marketing, social media, and conceptual brand systems.
+            </p>
+            <div class="project-highlights">
+              <span><i data-lucide="check"></i> Designed event posters, wedding stationery, business flyers, newsletters, and social media brand templates</span>
+              <span><i data-lucide="check"></i> Engineered full visual identity concepts including restaurant branding for Ember & Olive</span>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Brand Identity</span>
+              <span class="tech-badge">Graphic Design</span>
+              <span class="tech-badge">Social Media</span>
+              <span class="tech-badge">Typography</span>
+              <span class="tech-badge">Visual Presentation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills & Toolbox</h2>
+          <p class="section-desc">Technologies, programming languages, and tools I utilize in coursework and projects.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsMount">
+          <!-- Category 1: Programming & Web -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i data-lucide="terminal"></i></div>
+              <h3>Programming & Web</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">HTML5 & CSS3</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Learning</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">File I/O & Streams</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Mathematical & Algorithmic Thinking -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i data-lucide="brain"></i></div>
+              <h3>Mathematical & Algorithmic Thinking</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Data Structures & Algo</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Algorithmic Reasoning</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Linear Algebra</span>
+                <span class="skill-level">Academic</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Object-Oriented Design</span>
+                <span class="skill-level">Strong</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Design & Creative Media -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i data-lucide="layout"></i></div>
+              <h3>Design & Creative Media</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Graphic Design</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">UI/UX Design</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Brand & Identity Design</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Print & Digital Layouts</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Visual Presentation</span>
+                <span class="skill-level">Strong</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Professional Strengths -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon"><i data-lucide="layers"></i></div>
+              <h3>Tools & Professional Strengths</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Canva (Web & Graphics)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Active</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">MS Office Suite</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Strong Communication</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Structured Planning</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Time Management</span>
+                <span class="skill-level">Strong</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">I am actively seeking internship opportunities and part-time positions. Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-card" id="contactInfoMount">
+            <h3>Contact Information</h3>
+            <p>
+              Whether you have an internship or part-time opportunity, want to discuss a software project,
+              or just say hi, my inbox is always open!
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:aimafaisalbutt@gmail.com" class="channel-item">
+                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="channel-label">Email</span>
+                  <span class="channel-val">aimafaisalbutt@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/aima-faisal-5a997336b" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon"><i data-lucide="linkedin"></i></div>
+                <div>
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-val">linkedin.com/in/aima-faisal-5a997336b</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/AimaFaisal" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon"><i data-lucide="github"></i></div>
+                <div>
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-val">github.com/AimaFaisal</span>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">Lahore, Pakistan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Aima, I came across your portfolio..." required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <i data-lucide="send" class="btn-icon"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div id="formStatus" class="form-status" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text"><span id="footerBrandName">Aima Faisal</span><span class="dot">.</span></span>
+        </a>
+        <p class="footer-text">Built with modern HTML5, CSS3, and JavaScript. Designed for simplicity, performance, and impact.</p>
+      </div>
+
+      <div class="footer-right">
+        <span class="copyright">© <span id="currentYear"></span> <span id="copyrightName">Aima Faisal</span>. All rights reserved.</span>
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Data configuration and Interactive Logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
